@@ -52,6 +52,11 @@ body {
   margin-inline-start: 1.5em;
 }
 
+.main-header button {
+  max-height: 2em;
+  margin-inline-end: 1.5em;
+}
+
 .main-header:hover,
 .main-header *:hover {
   text-shadow: var(--shadow-glow-s);
@@ -78,6 +83,8 @@ body {
 }
 
 .main-content-container {
+  box-sizing: border-box;
+  padding: 0.5em;
   border-radius: var(--br-m);
   display: grid;
   grid-template-columns: 0.6fr 0.6fr;
@@ -88,6 +95,7 @@ body {
 
 .weather-app-container {
   display: grid;
+  gap: 0.5em;
   /* display: flex;
   align-self: center;
   justify-content: center; */
@@ -123,17 +131,22 @@ body {
 }
 
 .footer {
+  box-sizing: border-box;
+  text-align: center;
   width: 90svw;
   height: 200px;
-  display: flex row;
-  justify-content: center;
-  align-items: center;
+  padding: 1em;
+  display: grid;
   margin: auto;
   border-radius: var(--br-m);
   border: 3px solid purple;
 }
 
-.main-container button:not(:first-of-type) {
+.footer p {
+  margin: auto;
+}
+
+.main-container button {
   height: 4em;
   border-radius: var(--br-m);
 }
