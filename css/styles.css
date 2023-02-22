@@ -64,7 +64,7 @@ body {
 .main-container {
   border-radius: var(--br-m);
   display: grid;
-  height: 95svh;
+  height: 98svh;
 }
 
 .main-header input {
@@ -87,12 +87,17 @@ body {
 }
 
 .weather-app-container {
-  display: flex;
+  display: grid;
+  /* display: flex;
   align-self: center;
-  justify-content: center;
+  justify-content: center; */
   border-radius: var(--br-m);
   width: 100%;
   color: purple;
+}
+
+.weather {
+  border: 1px solid purple;
 }
 
 .button-grid-container {
@@ -126,4 +131,13 @@ body {
   margin: auto;
   border-radius: var(--br-m);
   border: 3px solid purple;
+}
+
+.main-container button:not(:first-of-type) {
+  height: 4em;
+  border-radius: var(--br-m);
+}
+
+.main-container button:hover {
+  background-color: var(--color-selected);
 }
