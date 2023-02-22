@@ -26,6 +26,8 @@
   --pink: rgb(244, 143, 177);
 }
 body {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   background-color: aliceblue;
 }
@@ -36,12 +38,17 @@ body {
 
 .main-header {
   margin: auto;
+  margin-block-start: 1.5em;
   width: 95svw;
-
-  border: 12px solid purple;
+  background-color: purple;
+  color: aliceblue;
   align-items: center;
   justify-content: space-between;
   border-radius: var(--br-m);
+}
+
+.main-header h1 {
+  margin-inline-start: 1.5em;
 }
 
 .map {
@@ -57,7 +64,7 @@ body {
 .main-header input {
   border-radius: var(--br-m);
   width: 18em;
-  height: 5em;
+  height: 4em;
 }
 
 .main-header * {
@@ -71,7 +78,7 @@ body {
   gap: 20px;
   margin: auto;
   width: 90svw;
-  border: 2px solid purple;
+  border: 3px solid purple;
 }
 
 .weather-app-container {
@@ -94,6 +101,16 @@ body {
 }
 
 .paragraph-container {
+  /* padding: 2em; */
   width: 90svw;
+  border-collapse: collapse;
+  border-radius: var(--br-m);
+  border: 3px solid purple;
+  box-shadow: var();
+
   margin: auto;
+}
+
+.paragraph-container p {
+  margin-inline-start: 15px;
 }
