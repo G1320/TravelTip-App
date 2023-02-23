@@ -57,6 +57,17 @@ body {
   margin-inline-end: 1.5em;
 }
 
+.main-header input {
+  border-radius: var(--br-m);
+  /* width: 18em; */
+  min-width: 16em;
+  height: 4em;
+}
+
+.main-header * {
+  margin: 0.5em;
+}
+
 .main-header:hover,
 .main-header *:hover {
   text-shadow: var(--shadow-glow-s);
@@ -72,22 +83,12 @@ body {
   height: 98svh;
 }
 
-.main-header input {
-  border-radius: var(--br-m);
-  width: 18em;
-  height: 4em;
-}
-
-.main-header * {
-  margin: 0.5em;
-}
-
 .main-content-container {
   box-sizing: border-box;
   padding: 0.5em;
   border-radius: var(--br-m);
   display: grid;
-  grid-template-columns: 0.6fr 0.6fr;
+  grid-template-columns: 0.4fr 0.6fr;
   margin: auto;
   width: 90svw;
   border: 3px solid purple;
@@ -96,9 +97,6 @@ body {
 .weather-app-container {
   display: grid;
   gap: 0.5em;
-  /* display: flex;
-  align-self: center;
-  justify-content: center; */
   border-radius: var(--br-m);
   width: 100%;
   color: purple;
@@ -106,30 +104,17 @@ body {
 
 .weather {
   border: 1px solid purple;
+  min-height: 6em;
 }
 
 .button-grid-container {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1em;
   border-radius: var(--br-m);
   margin: auto;
   width: 90svw;
-
-  grid-template-columns: repeat(4, 1fr);
 }
-
-.paragraph-container {
-  width: 90svw;
-  margin: auto;
-  border-radius: var(--br-m);
-  border: 3px solid purple;
-  box-shadow: var();
-}
-
-.paragraph-container p {
-  margin-inline-start: 15px;
-}
-
 .footer {
   box-sizing: border-box;
   text-align: center;
@@ -140,10 +125,6 @@ body {
   margin: auto;
   border-radius: var(--br-m);
   border: 3px solid purple;
-}
-
-.footer p {
-  margin: auto;
 }
 
 .main-container button {
