@@ -38,8 +38,10 @@ body {
 
 .main-header {
   margin: auto;
+  flex-wrap: nowrap;
   margin-block-start: 1.5em;
   width: 95svw;
+  max-height: 123px;
   background-color: purple;
   color: aliceblue;
   align-items: center;
@@ -50,18 +52,22 @@ body {
 
 .main-header h1 {
   margin-inline-start: 1.5em;
+  flex-shrink: 1;
 }
 
 .main-header button {
   max-height: 2em;
+
   margin-inline-end: 1.5em;
 }
 
 .main-header input {
   border-radius: var(--br-m);
-  /* width: 18em; */
-  min-width: 16em;
   height: 4em;
+}
+
+.main-header form {
+  min-width: max-content;
 }
 
 .main-header * {
